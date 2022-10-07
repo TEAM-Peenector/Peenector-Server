@@ -14,6 +14,8 @@ public class TeamResponseDto {
 
     private String studentName;
 
+    private Long id;
+
     public TeamResponseDto(Student entity) {
         System.out.println(entity.getSchoolNumber().substring(4, 6).equals("11"));
         if (entity.getSchoolNumber().substring(4, 6).equals("11")) {
@@ -30,5 +32,6 @@ public class TeamResponseDto {
         }
 
         this.studentName = entity.getName();
+        this.id = entity.getId();
     }
 }

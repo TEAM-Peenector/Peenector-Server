@@ -14,18 +14,15 @@ public class SignupRequestDto {
 
     private String password;
 
-    private String passwordCheck;
-
     private String contact;
 
     private String email;
 
     @Builder
-    public SignupRequestDto(String schoolNumber, String name, String password, String passwordCheck, String contact, String email) {
+    public SignupRequestDto(String schoolNumber, String name, String password, String contact, String email) {
         this.schoolNumber = schoolNumber;
         this.name = name;
         this.password = password;
-        this.passwordCheck = passwordCheck;
         this.contact = contact;
         this.email = email;
     }
