@@ -9,7 +9,10 @@ import lombok.*;
 public class SignupResponseDto {
     private Long id;
 
+    private Long teamId;
+
     public SignupResponseDto(Student entity) {
         this.id = entity.getId();
+        this.teamId = entity.getTeam().getId();
     }
 }
